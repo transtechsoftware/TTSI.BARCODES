@@ -1,0 +1,49 @@
+' This class will instantiate a single record of type "TTSI PU MANIFEST IM r4"
+Public Class PickupManifestRecord
+    Public Enum Fields
+        TrackingNumber = 1      '[EVENT].TrackingNum
+        OrderId = 2             '[EVENT].RefNum
+        FromCustId = 3          '[EVENT].FromCustId
+        FromCustName = 4        '[EVENT].FromCustName
+        FromAddRowId = 5        '[EVENT].FromAddId
+        FromLocId = 6           '[EVENT].FromLocId
+        FromLocLocName = 7      '[EVENT].FromLocName
+        FromLocStreet = 8       '[MANIFEST].FromAdd1
+        FromLocAddress2 = 9     '[MANIFEST].FromAdd2
+        FromLocCity = 10        '[MANIFEST].FromCity
+        FromLocState = 11       '[MANIFEST].FromState
+        FromLocZip = 12         '[MANIFEST].FromZip
+        FromLocPhone = 13       '[MANIFEST].FromPhone
+        FromLocContact = 14     '[MAINFEST].FromContact
+        FromLocEmail = 15       '[MANIFEST].FromEmail
+        ToAddRowId = 18         '[EVENT].ToAddId
+        ToCustId = 16           '[MANIFEST].toCustId
+        ToCustName = 17         '[MANIFEST].ToCustName
+        ToLocId = 19            '[EVENT].ToLocId
+        ToLocLocName = 20       '[EVENT].ToLocName
+        ToLocStreet = 21        '[MANIFEST].ToAdd1
+        ToLocAddress2 = 22      '[MANIFEST].ToAdd2
+        ToLocCity = 23          '[EVENT].ToCity
+        ToLocState = 24         '[MANIFEST].ToState
+        ToLocZip = 25           '[MANIFEST].ToZip
+        ToLocContact = 27       '[MANIFEST].ToContact
+        ToLocPhone = 26         '[MANIFEST].ToPhone
+        ToLocEmail = 28         '[MANIFEST].ToEmail
+        Weight = 29             '[EVENT].Weight
+        PieceCount = 30         '[EVENT].Pieces
+        SentByName = 31         '[MANIFEST].SentBy
+        CartonCode = 32         '[EVENT].ParcelType
+        Dimensions = 33         '[MANIFEST].ServiceLevel
+        ServiceLevel = 34       '[MANIFEST].SpecialHandle
+        BillType = 35           '[MANIFEST].BillType
+        BillNum = 36            '[MANIFEST].BillNum
+        TranDate = 37           '[EVENT].ScanDate
+        UniqueRecordId = 38     '[MANIFEST].RowId
+        Void = 39               '[EVENT].Void
+        ReferenceNumber = 40    '[MANIFEST].Ref1
+        PONumber = 41           '[MANIFEST].Ref2
+        ThirdPartyBillNum = 42  '[MANIFEST].Ref3
+        Modifiers = 43          '[MANIFEST].Ref4
+        DeclaredValue = 44      '[MANIFEST].Ref5
+    End Enum
+End Class

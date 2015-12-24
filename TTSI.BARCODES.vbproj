@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B5B6AA6-0403-45E2-A0AA-859D6169B12C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>TTSI.BARCODES</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TTSI.BARCODES</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TTSI.BARCODES.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TTSI.BARCODES.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuthorData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Barcode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarcodeFactory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Carton.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cartons.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HossBarcode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IngramMicroBarcode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainModule.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickupManifest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickupManifestMapper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickupManifestMapperV1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickupManifestRecord.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PickupManifestRecords.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScanList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScanListFileName.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScanRecord.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScanRecords.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmsList.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SmsRecord.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="smsRecords.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TPCBarcode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TPCOperatorBC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TPCPointBC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
